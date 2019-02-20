@@ -1,8 +1,8 @@
-# Childcare Template Version: 1.0
+# National-Geographic Template Version: 1.0
 ## Depends on  Bootstrap Library
 This Template For Freelancers To Define Themselves And Display Their Works.
 
-Review : [Childcare Demo](https://a7medsamirf.github.io/Childcare/)
+Review : [National-Geographic Demo](https://a7medsamirf.github.io/National-Geographic/)
 
 ## Content:
 1. CSS Foder
@@ -11,8 +11,7 @@ Review : [Childcare Demo](https://a7medsamirf.github.io/Childcare/)
      - Bootstrap    > bootstrap.css
      - fancybox     > jquery.fancybox.css
      - slick        > slick-theme.css
-     - slick        > slick.css
-     - Style        > style.css
+     - swiper       > swiper.css
     
 2. Template Images > All Images and illustrations are just for demonstration, all right reserved by Vijay Verma.
 
@@ -23,14 +22,13 @@ Review : [Childcare Demo](https://a7medsamirf.github.io/Childcare/)
      - wow        > wow.min.js
      - smooth     > smooth-scroll.js
      - fancybox   > jquery.fancybox.min.js
+     - swiper     > swiper.min.js	 
      - custom     > custom.js	  
 
 
 3. Web Fonts 
 4. License
 5. index.html
-6. blog.html  
-7. single-post.html
 
  ## Languages and libraries  
  - Html5
@@ -41,15 +39,16 @@ Review : [Childcare Demo](https://a7medsamirf.github.io/Childcare/)
  - Animate
  - Wow js
  - fancybox popup js
+ - swiper js
  
     
 
 ### License
 
-[MIT](https://github.com/a7medsamirf/Childcare/blob/master/LICENSE).
+[MIT](https://github.com/a7medsamirf/National-Geographic/blob/master/LICENSE).
 
 ### Support or Contact
- Copyright (c) 2018 Ahmed samir  ahmed.samir.farid@gmail.com github.com/a7medsamirf
+ Copyright (c) 2019 Ahmed samir  ahmed.samir.farid@gmail.com github.com/a7medsamirf
  
  ### [Facebook Account](https://www.facebook.com/a7med.samir.f)
 

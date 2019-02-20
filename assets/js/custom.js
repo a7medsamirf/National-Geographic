@@ -1,9 +1,9 @@
 /*************************************
 
-Template Name: Childcare | Personal Portfolio HTML5 Template
+Template Name: National Geographic | Personal Portfolio HTML5 Template
 Author: Ahmed Samir
 Author URI: https://www.facebook.com/a7med.samir.f
-Description: Meruem | Personal Portfolio HTML5 Template
+Description: National Geographic | Personal Portfolio HTML5 Template
 Version: 1.0
 
 NOTE: This is active js file of the template.
@@ -39,6 +39,20 @@ $(document).ready(function () {
 }); 
 
 /* ==================================
+      Start loading
+===================================== */
+
+$(window).on("load", function () {
+  "use strict";
+  $(".sk-folding-cube").fadeOut(1000, function () {
+      $("body").css("overflow", "hidden");
+      $(this).parent().slideUp(1000, function () {
+          $(this).remove();
+      });
+  });
+});
+
+/* ==================================
       Start Navigation Bar
 ===================================== */
 $(document).ready(function () {
@@ -61,6 +75,17 @@ $(document).ready(function () {
   });
 });
 
+/* ==================================
+      Start dropdown
+===================================== */
+
+$('.dropdown').on('show.bs.dropdown', function (e) {
+  $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+});
+
+$('.dropdown').on('hide.bs.dropdown', function (e) {
+  $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+});
 
 /* ==================================
       Start Slick slider
@@ -86,44 +111,10 @@ $(document).ready(function () {
 
     },
     
-  
   });
-
-  
       });
 
 
-      /* ==================================
-      Start dropdown
-===================================== */
-
-$('.dropdown').on('show.bs.dropdown', function (e) {
-  $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
-});
-
-$('.dropdown').on('hide.bs.dropdown', function (e) {
-  $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
-});
 
 
-
-// start loading 
-$(window).on("load", function () {
-
-  "use strict";
-
-  // Loading Elements
-
-  $(".sk-folding-cube").fadeOut(1000, function () {
-
-      // Show The Scroll
-
-      $("body").css("overflow", "hidden");
-
-      $(this).parent().slideUp(1000, function () {
-
-          $(this).remove();
-      });
-  });
-});
 
