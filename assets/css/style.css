@@ -49,7 +49,8 @@ Style Index
     width: 40px;
     position: relative;
     top: 50%;
-    transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
 }
 .preload .sk-folding-cube img
 {
@@ -67,7 +68,13 @@ Style Index
     max-width: 7em;
     white-space: nowrap;
     color: #fff;
-    animation: loading 2s linear;
+    -webkit-animation: loading 2s linear;
+            animation: loading 2s linear;
+}
+@-webkit-keyframes loading {
+    0% {
+        max-width: 100px;
+    }
 }
 @keyframes loading {
     0% {
@@ -163,7 +170,8 @@ p {
     border: 1px solid #ffc107;
     color: #fff;
     outline: 0;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 /*--------------------------------------------------
 [2. Start Navigation Bar ]
@@ -337,6 +345,7 @@ p {
 .swiper-container {
     width: 100%;
     height: 100%;
+    -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out
 }
 
@@ -348,15 +357,12 @@ p {
     background: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    -webkit-justify-content: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    -webkit-align-items: center;
     align-items: center;
 }
 
@@ -365,9 +371,7 @@ p {
     width: 100%;
     height: 100%;
     max-width: 100%;
-    -ms-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     position: relative;
     left: 50%;
@@ -395,7 +399,21 @@ p {
 }
 
 .swiper-container .pulse {
-    animation: pulse 1s linear infinite;
+    -webkit-animation: pulse 1s linear infinite;
+            animation: pulse 1s linear infinite;
+}
+
+
+@-webkit-keyframes pulse{
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0);
+    }
 }
 
 
@@ -434,6 +452,7 @@ p {
     position: relative;
     color: #fff;
     padding: 50px 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#111111), color-stop(#0d0d0d), color-stop(#090909), color-stop(#050505), to(#000000));
     background-image: linear-gradient(to bottom, #111111, #0d0d0d, #090909, #050505, #000000);
 }
 
@@ -505,6 +524,7 @@ p {
 
 #now-showing .showing
 {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#111111), color-stop(#0d0d0d), color-stop(#090909), color-stop(#050505), to(#000000));
     background-image: linear-gradient(to top, #111111, #0d0d0d, #090909, #050505, #000000);
 
 }
@@ -518,12 +538,14 @@ p {
 }
 #now-showing .tonight
 {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#111111), color-stop(#0d0d0d), color-stop(#090909), color-stop(#050505), to(#000000));
     background-image: linear-gradient(to top, #111111, #0d0d0d, #090909, #050505, #000000);
     padding: 0 15px
 }
 
 #now-showing .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     color: #464749;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#f0f0f0), color-stop(#f4f4f4), color-stop(#f7f7f7), color-stop(#fbfbfb), to(#ffffff));
     background-image: linear-gradient(to top, #f0f0f0, #f4f4f4, #f7f7f7, #fbfbfb, #ffffff);
     padding: 15px 10px;
     position: relative;
@@ -531,6 +553,7 @@ p {
 
 #now-showing .nav-pills .nav-link {
     border-radius: 0;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#111111), color-stop(#0d0d0d), color-stop(#090909), color-stop(#050505), to(#000000));
     background-image: linear-gradient(to top, #111111, #0d0d0d, #090909, #050505, #000000);
     margin-top: 10px;
 }
@@ -572,6 +595,7 @@ p {
 }
 #blog-post .card
 {
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#111111), color-stop(#0d0d0d), color-stop(#090909), color-stop(#050505), to(#000000));
     background-image: linear-gradient(to right top, #111111, #0d0d0d, #090909, #050505, #000000); 
     border: initial;
 }
@@ -589,7 +613,8 @@ p {
 {
     position: absolute;
     text-align: center;
-    transform: translate(95px, 75px);
+    -webkit-transform: translate(95px, 75px);
+            transform: translate(95px, 75px);
     border: 4px solid;
     width: 50px;
     height: 50px;
@@ -674,6 +699,7 @@ p {
 
 #newsletter {
     padding: 100px 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#111111), color-stop(#0d0d0d), color-stop(#090909), color-stop(#050505), to(#000000));
     background-image: linear-gradient(to bottom, #111111, #0d0d0d, #090909, #050505, #000000);}
 
 #newsletter h3 {
@@ -690,7 +716,8 @@ p {
     vertical-align: middle;
     border-radius: 20px;
     height: 50px;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
 }
 
 #newsletter .form-control {
@@ -745,6 +772,7 @@ p {
 {
     position: relative;
     border-radius: 30px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#0f0f0f), color-stop(#0d0d0d), color-stop(#0c0c0c), color-stop(#0a0a0a), to(#080808));
     background-image: linear-gradient(to bottom, #0f0f0f, #0d0d0d, #0c0c0c, #0a0a0a, #080808);
 }
 
@@ -752,16 +780,19 @@ p {
 #footer .footer-copyright .facebook:hover
 {
     color: #3b5998;
+    -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
 #footer .footer-copyright .twitter:hover
 {
     color: #26a6d1;
+    -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
 #footer .footer-copyright .instagram:hover
 {
     color: #3b5998;
+    -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
 
